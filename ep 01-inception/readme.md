@@ -11,11 +11,11 @@ while the React DOM library handles the rendering of React components into the b
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>ep 01-igniting our app</title>
-  </head>
   <body>
-    <div id="root"></div>
+
+    <div id="root">
+
+    </div>
 
     <script>
       const heading = document.createElement('h1');
