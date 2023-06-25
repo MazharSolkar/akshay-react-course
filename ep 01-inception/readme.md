@@ -6,17 +6,26 @@ the React library provides the core functionality for building user interfaces u
 
 while the React DOM library handles the rendering of React components into the browser DOM, ensuring efficient updates and synchronization between the virtual DOM and the actual DOM.
 
-```javascript
-const parent = React.createElement('div', { id: 'parent' }, [
-  React.createElement('div', { id: 'child1' }, [
-    React.createElement('h1', {}, "I'm h1 tag"),
-    React.createElement('h1', {}, "I'm h1 tag"),
-  ]),
-  React.createElement('div', { id: 'child2' }, [
-    React.createElement('h1', {}, "I'm h1 tag"),
-    React.createElement('h1', {}, "I'm h1 tag"),
-  ]),
-]);
+# Hello World using javascript
 
-root.render(parent);
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ep 01-igniting our app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const heading = document.createElement('h1');
+      heading.innerHTML = 'Hello World! using javascript';
+      const root = document.getElementById('root');
+      root.appendChild(heading);
+    </script>
+
+  </body>
+</html>
+
+root.render(parent);\
 ```
