@@ -25,5 +25,9 @@ while the React DOM library handles the rendering of React components into the b
   </body>
 </html>
 
-root.render(parent);\
+root.render(parent);
 ```
+
+# Injecting react in our app using cdn and Hello World using react
+
+![Alt text](image.png)
