@@ -30,4 +30,4 @@ root.render(parent);
 
 # Injecting react in our app using cdn and Hello World using react
 
-![Alt text](image.png)
+![Alt text](image-1.png)
