@@ -30,4 +30,4 @@ root.render(parent);
 
 # Injecting react in our app using cdn and Hello World using react
 
-![Alt text](C:/Users/mazhar/Downloads/wallpaperflare.com_wallpaper (6).png)
+![Alt text](C:\Users\mazhar\Downloads\wallpaperflare.com_wallpaper (6).png)
