@@ -28,7 +28,7 @@ while the React DOM library handles the rendering of React components into the b
 root.render(parent);
 ```
 
-# Injecting react in our app using cdn and Hello World using react
+# Injecting react in our app using **cdn** and Hello World using react
 
 ```HTML
 <html lang="en">
@@ -46,17 +46,9 @@ root.render(parent);
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
     <script src="./App.js">
-      const heading = React.createElement(
-        'h1',
-        { id: 'heading', class: 'giant' },
-        'Hello World! using react'
-      );
-      /*
-      - React.createElement = creates react element which is an object, that will be coverted into html later on.
-      - {} this object is used to give attributes like class, id etc.
-      */
+      const heading = React.createElement('h1', { id: 'heading', class: 'giant' },'Hello World!');
 
-      console.log(heading); // return object
+      console.log(heading);
 
       const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -67,5 +59,7 @@ root.render(parent);
 </html>
 ```
 
-- **_React.createElement_** = creates react element which is an object, that will be coverted into html later on.
-- **_{}_** = this object is used to give attributes like class, id etc.
+- **React.createElement =** creates react element which is an object, that will be coverted into html later on.
+- **{} =** this object is used to give attributes like class, id etc.
+- **console.log(heading) =** will return object(which is react element).
+- **root.render() =** convert object(which is react element) into htlm element and puts it into dom.
