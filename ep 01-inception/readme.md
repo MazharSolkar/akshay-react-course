@@ -63,3 +63,5 @@ root.render(parent);
 - **{} =** this object is used to give attributes like class, id etc.
 - **console.log(heading) =** will return object(which is react element).
 - **root.render() =** convert object(which is react element) into htlm element and puts it into dom.
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
