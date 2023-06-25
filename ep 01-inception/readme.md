@@ -65,3 +65,7 @@ root.render(parent);
 - **{} =** this object is used to give attributes like class, id etc.
 - **console.log(heading) =** will return object(which is react element).
 - **root.render() =** convert object(which is react element) into htlm element and puts it into dom.
+
+- if i have any element inside root element that will be replaced by the elements i'm rendering through root.render() method.
+- if i have any element above or below the root element they will be displayed as it as, because react is applied to only that spefice element having root id.
+- this proves that we can use react at specific place in our code. which is not possible in some of the frameworks they require us to create entrie app using that framework.
