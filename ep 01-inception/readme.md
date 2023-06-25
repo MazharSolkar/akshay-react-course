@@ -66,3 +66,6 @@ root.render(parent);
   </body>
 </html>
 ```
+
+- React.createElement = creates react element which is an object, that will be coverted into html later on.
+- {} this object is used to give attributes like class, id etc.
