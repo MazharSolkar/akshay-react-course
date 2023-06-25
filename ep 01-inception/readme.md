@@ -36,7 +36,9 @@ root.render(parent);
     <title>ep 01-igniting our app</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+        <h1>Hey there Everyone</h1>
+    </div>
 
     <script
       crossorigin
@@ -45,19 +47,19 @@ root.render(parent);
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-    <script src="./App.js">
+    <script>
       const heading = React.createElement('h1', { id: 'heading', class: 'giant' },'Hello World!');
-
       console.log(heading);
 
       const root = ReactDOM.createRoot(document.getElementById('root'));
-
       root.render(heading);
-      //root.render() convert object(which is react element) into html element and puts it into dom
     </script>
+
   </body>
 </html>
 ```
+
+## **NOTE**
 
 - **React.createElement =** creates react element which is an object, that will be coverted into html later on.
 - **{} =** this object is used to give attributes like class, id etc.
