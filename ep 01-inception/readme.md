@@ -64,4 +64,4 @@ root.render(parent);
 - **console.log(heading) =** will return object(which is react element).
 - **root.render() =** convert object(which is react element) into htlm element and puts it into dom.
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](C:/Users/mazhar/Downloads/gituplodimage.png)
