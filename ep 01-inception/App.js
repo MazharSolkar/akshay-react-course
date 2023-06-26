@@ -1,21 +1,15 @@
 // Hello World using react
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
 const heading = React.createElement(
   'h1',
   { id: 'heading', class: 'giant' },
   'Hello World! using react'
 );
-/*
-- React.createElement = creates react element which is an object, that will be coverted into html later on.
-- {} this object is used to give attributes like class, id etc.
-*/
 
-console.log(heading); // return object
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
+console.log(heading);
 // root.render(heading);
-//root.render() convert object(which is react element) into html element and puts it into dom
 
 // <========================================================================>
 
@@ -44,5 +38,3 @@ const parent = React.createElement('div', { id: 'parent' }, [
 ]);
 
 root.render(parent);
-
-// to avoid this complex structure there is alternative in react which is jsx

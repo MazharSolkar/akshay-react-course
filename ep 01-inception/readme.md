@@ -1,10 +1,16 @@
-# react
+# Hello World using HTML
 
-the React library provides the core functionality for building user interfaces using components and managing application state.
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>Hello World!</h1>
 
-# react-dom
+  </body>
+</html>
 
-while the React DOM library handles the rendering of React components into the browser DOM, ensuring efficient updates and synchronization between the virtual DOM and the actual DOM.
+root.render(parent);
+```
 
 # Hello World using javascript
 
@@ -128,3 +134,99 @@ root.render(parent);
 ## **NOTE**
 
 - To avoid this complex structure there is alternative in react which is jsx.
+
+# What is CDN and Crossorigin
+
+A content delivery network (CDN) is a group of servers spread across different geographical locations worldwide to enable the quick delivery of a website’s content. It is also known as a content distribution network.
+
+https://www.hostinger.in/tutorials/what-is-cdn
+
+https://www.w3schools.com/tags/att_script_crossorigin.asp#:~:text=The%20crossorigin%20attribute%20sets%20the,or%20scripts)%20from%20another%20domain.
+
+# THEORY
+
+# What is Emmet?
+
+It allows developers to write shorthand abbreviations that expand into complete HTML or CSS code snippets.
+
+# Difference between a library and framework?
+
+- A library is a collection of pre-written code that provides specific functionalities and can be used to enhance the development process. Developers can selectively use libraries to add specific features to their applications.
+- A framework is a comprehensive software platform that provides a foundation and a set of tools for building applications. It offers a structured environment with predefined rules, conventions, and integrated features to streamline the development process.
+- While libraries are used to add specific functionalities(e.g. react and react dom), frameworks provide a complete solution and dictate the overall architecture and flow of the application.
+- You can use libraries like react and jquery for only specific part of your application, but it is not possible with most of the frameworks. You need to create entire application using framework.
+
+# What is CDN? Why do we use it?
+
+A content delivery network (CDN) is a group of servers spread across different geographical locations worldwide to enable the quick delivery of a website’s content. It is also known as a content distribution network.
+
+https://www.hostinger.in/tutorials/what-is-cdn
+
+# Why is React Known as React?
+
+- The name "React" reflects the central concept of the react library
+  i.e. reacting to state changes and efficiently updating the UI in response.
+- The reactive nature is achieved through virtual DOM.
+- virtual DOM creates a virtual representation of the UI based on the current application state.
+- When the state changes, React calculates the differences between the previous and new virtual DOM and updates only the necessary parts of the actual DOM.
+  This process is commonly referred to as "reconciliation" or "diffing."
+
+# What is cross-origin in the script tag?
+
+### CORS (Cross Origin Resource Sharing)
+
+- CORS is a security mechanism that allows resource sharing across different origins(domains).
+- The same-origin policy is a default security measure that restricts web pages from making requests to different domains. However, CORS provides a way to relax this restriction selectively.
+- CORS works through a mechanism of preflight and actual requests:
+
+- - Preflight Request: Before sending the actual request, the browser may send a preflight request with the HTTP method "OPTIONS" to check if the server allows the actual request. The preflight request includes headers such as "Origin" and "Access-Control-Request-Method", which inform the server about the intent of the actual request.
+
+- - Access-Control-Allow-Origin: The server responds to the preflight request with the "Access-Control-Allow-Origin" header, which specifies the domains allowed to access the requested resource. If the requesting domain is in the allowed list, the browser proceeds with the actual request. Otherwise, it may block the request due to the same-origin policy.
+
+- - Actual Request: If the preflight request is successful, the browser sends the actual request, including the necessary data and headers. The server responds to this actual request as it normally would.
+
+- - crossorigin
+    1
+    The crossorigin attribute in a script tag specifies how the browser handles cross-origin requests for the script file.
+
+- - The crossorigin attribute can have three values:
+
+- - - anonymous: The browser will send a CORS request, but will not send any credentials, such as cookies or authentication tokens. This is the default value.
+- - - use-credentials: The browser will send a CORS request, and will send credentials, if the server allows it.
+- - - null: The browser will not send a CORS request. This is the same as omitting the crossorigin attribute altogether.
+
+# What is the difference between React and React DOM
+
+- the React library provides the core functionality for building user interfaces using components, virtual DOM and managing application state.
+- while the React DOM library handles the rendering of React components into the browser DOM, ensuring efficient updates and synchronization between the virtual DOM and the actual DOM.
+
+# What is difference between react.development.js and react.production.js files via CDN?
+
+# What are async and defer?
+
+# CODING
+
+# set up all the tools on your laptop
+
+- vs code
+- chrome
+
+# create a new git repo
+
+# Build your first Hello world program using,
+
+- Using just HTML
+- Using JS to manipulate the DOM
+- Using React
+
+# Use CDN links
+
+# Create an element
+
+# Create nested React Elements
+
+# Use root.render
+
+# Push code to github
+
+# Learn about arrow functions before the next class
