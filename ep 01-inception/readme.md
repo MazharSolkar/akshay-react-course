@@ -199,27 +199,27 @@ https://www.hostinger.in/tutorials/what-is-cdn
 
 # CODING
 
-## set up all the tools on your laptop
+- set up all the tools on your laptop
 
-- vs code
-- chrome
+  - vs code
+  - chrome
 
-## create a new git repo
+- create a new git repo
 
-## Build your first Hello world program using,
+- Build your first Hello world program using,
 
-- Using just HTML
-- Using JS to manipulate the DOM
-- Using React
+  - Using just HTML
+  - Using JS to manipulate the DOM
+  - Using React
 
-## Use CDN links
+- Use CDN links
 
-## Create an element
+- Create an element
 
-## Create nested React Elements
+- Create nested React Elements
 
-## Use root.render
+- Use root.render
 
-## Push code to github
+- Push code to github
 
-## Learn about arrow functions before the next class
+- Learn about arrow functions before the next class
