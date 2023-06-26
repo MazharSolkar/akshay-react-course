@@ -145,7 +145,7 @@ It allows developers to write shorthand abbreviations that expand into complete 
 
 - A library is a collection of pre-written code that provides specific functionalities and can be used to enhance the development process. Developers can selectively use libraries to add specific features to their applications.
 - A framework is a comprehensive software platform that provides a foundation and a set of tools for building applications. It offers a structured environment with predefined rules, conventions, and integrated features to streamline the development process.
-- While libraries are used to add specific functionalities(e.g. react and react dom), frameworks provide a complete solution and dictate the overall architecture and flow of the application.
+- While libraries are used to add specific functionalities(e.g. react and react dom, jquery), frameworks provide a complete solution and dictate the overall architecture and flow of the application. (e.g. angular, django,).
 - You can use libraries like react and jquery for only specific part of your application, but it is not possible with most of the frameworks. You need to create entire application using framework.
 
 ## What is CDN? Why do we use it?
