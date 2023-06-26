@@ -195,7 +195,60 @@ https://www.hostinger.in/tutorials/what-is-cdn
 
 ## What is difference between react.development.js and react.production.js files via CDN?
 
+**react.development.js**
+
+- It is for development purpose.
+- It include debugging tools, such as error messages, warnings, and development-specific features.
+
+**react.production.js**
+
+- This file is optimized for production environments.
+- It is smaller in size because it omits the debugging information and development tools present in the development version. By using react.production.js, you will achieve better performance and reduced file size for your production application.
+- It is advisable to switch to this file when deploying your application to a live production environment.
+
 ## What are async and defer?
+
+https://www.section.io/engineering-education/understanding-script-tag-attributes-async-defer/
+When you open a webpage there are two things happening
+
+1. HTML parsing
+2. Loading of script
+
+- there are two parts in script loading
+
+  1. fetching the script from network
+  2. executing the script line by line
+
+- There are three ways to load script
+
+  1. without any attribute
+
+  ````HTML
+  <script src="script.js"></script>```
+
+    - when the script tag is encountered HTML parsing is stopped.
+    - then script is fetched and executed.
+    - after that HTML parsing is resumed.
+
+  2. with async attribute
+  ```HTML
+  <script src="script.js" async></script>```
+
+    - when the script tag is encountered HTML parsing is not stopped.
+    - script is fetched parallelly with HTML parsing.
+    - once script is fetched and HTML parsing is stopped, and script is executed.
+    - after script execution HTML parsing is resumed.
+    - It is good for loading script that are not dependent on other, script which fetched first will be executed first there is no order followed.
+
+  3. with defer attribute
+  ```HTML
+  <script src="script.js" defer></script>```
+
+    - when script tag is encountered HTML parsing is not stopped.
+    - script is fetched parallelly with HTML parsing.
+    - once the HTML parsing is done all fetched scripts are executed.
+    - It is food for loading scripts that are dependent on one another, and order is required. defer follows order.
+  ````
 
 # CODING
 
