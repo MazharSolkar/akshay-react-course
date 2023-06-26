@@ -1,4 +1,4 @@
-# Hello World using HTML
+## Hello World using HTML
 
 ```HTML
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
 root.render(parent);
 ```
 
-# Hello World using javascript
+## Hello World using javascript
 
 ```HTML
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ root.render(parent);
 root.render(parent);
 ```
 
-# Injecting react in our app using **cdn** and Hello World using react
+## Injecting react in our app using **cdn** and Hello World using react
 
 ```HTML
 <html lang="en">
@@ -78,7 +78,7 @@ root.render(parent);
 - if i have any element above or below the root element they will be displayed as it as, because react is applied to only that spefice element having root id.
 - **_this proves that we can use react at specific place in our code._** which is not possible in some of the frameworks they require us to create entrie app using that framework.
 
-# Creating HTML Structure Using React
+## Creating HTML Structure Using React
 
 ### index.html
 
@@ -131,38 +131,30 @@ const parent = React.createElement('div', { id: 'parent' }, [
 root.render(parent);
 ```
 
-## **NOTE**
+### **NOTE**
 
 - To avoid this complex structure there is alternative in react which is jsx.
 
-# What is CDN and Crossorigin
+## THEORY
 
-A content delivery network (CDN) is a group of servers spread across different geographical locations worldwide to enable the quick delivery of a website’s content. It is also known as a content distribution network.
-
-https://www.hostinger.in/tutorials/what-is-cdn
-
-https://www.w3schools.com/tags/att_script_crossorigin.asp#:~:text=The%20crossorigin%20attribute%20sets%20the,or%20scripts)%20from%20another%20domain.
-
-# THEORY
-
-# What is Emmet?
+## What is Emmet?
 
 It allows developers to write shorthand abbreviations that expand into complete HTML or CSS code snippets.
 
-# Difference between a library and framework?
+## Difference between a library and framework?
 
 - A library is a collection of pre-written code that provides specific functionalities and can be used to enhance the development process. Developers can selectively use libraries to add specific features to their applications.
 - A framework is a comprehensive software platform that provides a foundation and a set of tools for building applications. It offers a structured environment with predefined rules, conventions, and integrated features to streamline the development process.
 - While libraries are used to add specific functionalities(e.g. react and react dom), frameworks provide a complete solution and dictate the overall architecture and flow of the application.
 - You can use libraries like react and jquery for only specific part of your application, but it is not possible with most of the frameworks. You need to create entire application using framework.
 
-# What is CDN? Why do we use it?
+## What is CDN? Why do we use it?
 
 A content delivery network (CDN) is a group of servers spread across different geographical locations worldwide to enable the quick delivery of a website’s content. It is also known as a content distribution network.
 
 https://www.hostinger.in/tutorials/what-is-cdn
 
-# Why is React Known as React?
+## Why is React Known as React?
 
 - The name "React" reflects the central concept of the react library
   i.e. reacting to state changes and efficiently updating the UI in response.
@@ -171,7 +163,7 @@ https://www.hostinger.in/tutorials/what-is-cdn
 - When the state changes, React calculates the differences between the previous and new virtual DOM and updates only the necessary parts of the actual DOM.
   This process is commonly referred to as "reconciliation" or "diffing."
 
-# What is cross-origin in the script tag?
+## What is cross-origin in the script tag?
 
 ### CORS (Cross Origin Resource Sharing)
 
@@ -196,38 +188,38 @@ https://www.hostinger.in/tutorials/what-is-cdn
     - use-credentials: The browser will send a CORS request, and will send credentials, if the server allows it.
     - null: The browser will not send a CORS request. This is the same as omitting the crossorigin attribute altogether.
 
-# What is the difference between React and React DOM
+## What is the difference between React and React DOM
 
 - the React library provides the core functionality for building user interfaces using components, virtual DOM and managing application state.
 - while the React DOM library handles the rendering of React components into the browser DOM, ensuring efficient updates and synchronization between the virtual DOM and the actual DOM.
 
-# What is difference between react.development.js and react.production.js files via CDN?
+## What is difference between react.development.js and react.production.js files via CDN?
 
-# What are async and defer?
+## What are async and defer?
 
 # CODING
 
-# set up all the tools on your laptop
+## set up all the tools on your laptop
 
 - vs code
 - chrome
 
-# create a new git repo
+## create a new git repo
 
-# Build your first Hello world program using,
+## Build your first Hello world program using,
 
 - Using just HTML
 - Using JS to manipulate the DOM
 - Using React
 
-# Use CDN links
+## Use CDN links
 
-# Create an element
+## Create an element
 
-# Create nested React Elements
+## Create nested React Elements
 
-# Use root.render
+## Use root.render
 
-# Push code to github
+## Push code to github
 
-# Learn about arrow functions before the next class
+## Learn about arrow functions before the next class
