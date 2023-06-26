@@ -179,21 +179,22 @@ https://www.hostinger.in/tutorials/what-is-cdn
 - The same-origin policy is a default security measure that restricts web pages from making requests to different domains. However, CORS provides a way to relax this restriction selectively.
 - CORS works through a mechanism of preflight and actual requests:
 
-- - Preflight Request: Before sending the actual request, the browser may send a preflight request with the HTTP method "OPTIONS" to check if the server allows the actual request. The preflight request includes headers such as "Origin" and "Access-Control-Request-Method", which inform the server about the intent of the actual request.
+  - Preflight Request: Before sending the actual request, the browser may send a preflight request with the HTTP method "OPTIONS" to check if the server allows the actual request. The preflight request includes headers such as "Origin" and "Access-Control-Request-Method", which inform the server about the intent of the actual request.
 
-- - Access-Control-Allow-Origin: The server responds to the preflight request with the "Access-Control-Allow-Origin" header, which specifies the domains allowed to access the requested resource. If the requesting domain is in the allowed list, the browser proceeds with the actual request. Otherwise, it may block the request due to the same-origin policy.
+  - Access-Control-Allow-Origin: The server responds to the preflight request with the "Access-Control-Allow-Origin" header, which specifies the domains allowed to access the requested resource. If the requesting domain is in the allowed list, the browser proceeds with the actual request. Otherwise, it may block the request due to the same-origin policy.
 
-- - Actual Request: If the preflight request is successful, the browser sends the actual request, including the necessary data and headers. The server responds to this actual request as it normally would.
+  - Actual Request: If the preflight request is successful, the browser sends the actual request, including the necessary data and headers. The server responds to this actual request as it normally would.
 
-- - crossorigin
-    1
-    The crossorigin attribute in a script tag specifies how the browser handles cross-origin requests for the script file.
+  - chatgpt (for example)
 
-- - The crossorigin attribute can have three values:
+- crossorigin
+  The crossorigin attribute in a script tag specifies how the browser handles cross-origin requests for the script file.
 
-- - - anonymous: The browser will send a CORS request, but will not send any credentials, such as cookies or authentication tokens. This is the default value.
-- - - use-credentials: The browser will send a CORS request, and will send credentials, if the server allows it.
-- - - null: The browser will not send a CORS request. This is the same as omitting the crossorigin attribute altogether.
+  - The crossorigin attribute can have three values:
+
+    - anonymous: The browser will send a CORS request, but will not send any credentials, such as cookies or authentication tokens. This is the default value.
+    - use-credentials: The browser will send a CORS request, and will send credentials, if the server allows it.
+    - null: The browser will not send a CORS request. This is the same as omitting the crossorigin attribute altogether.
 
 # What is the difference between React and React DOM
 
