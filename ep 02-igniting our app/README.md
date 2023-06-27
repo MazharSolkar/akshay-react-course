@@ -2,6 +2,10 @@
 
 ## What is NPM?
 
+- NPM in not the acronym of node package manager.
+- NPM is node package manager.
+- NPM is a repository where all the packages are hosted or stored.
+
 ## What is Parcel/Webpack? why do we need it?
 
 ## what is .parcel-cache
@@ -17,6 +21,8 @@
 ## What is .gitignore? What should we add and not add into it?
 
 ## What is the difference between package.json and package-lock.json
+
+- package.json is configuration for npm.
 
 ## Why should I not modify package-lock.json?
 

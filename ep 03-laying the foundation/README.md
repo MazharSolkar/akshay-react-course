@@ -40,6 +40,8 @@
   - _type = "application/xml"_ : If you want to embed XML data within a
   - _and many more ..._
 
+## TitleComponent vs <TitleComponent /> vs <TitleComponent></TitleComponent>
+
 ````JSX
 {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>}
 in jsx ```
@@ -47,10 +49,10 @@ in jsx ```
 ```JSX
 {<TitleComponent />} and {<TitleComponent></TitleComponent>}
 and {TitleComponent()} = both are same they are used to render a component.
-{TitleComponet} = This syntax is used to reference the component without rendering it. This is used when you want pass component as a prop.
 ````
 
 ```JSX
+{TitleComponet} = This syntax is used to reference the component without rendering it. This is used when you want pass component as a prop.
 const Button = ({ icon: IconComponent }) => (
   <button>
     <IconComponent />
