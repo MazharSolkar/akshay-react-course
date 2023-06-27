@@ -40,9 +40,17 @@
   - _type = "application/xml"_ : If you want to embed XML data within a
   - _and many more ..._
 
-## {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
+## {TitleComponent} vs ```JSX
 
-**{<TitleComponent />} and {<TitleComponent></TitleComponent>}** and {TitleComponent()} = both are same they are used to render a component.
+{<TitleComponent/>} vs {<TitleComponent></TitleComponent>}```
+in JSX
+
+```JSX
+{<TitleComponent />} and {<TitleComponent></TitleComponent>}
+and {TitleComponent()}
+```
+
+= both are same they are used to render a component.
 **{TitleComponet}** = This syntax is used to reference the component without rendering it. This is used when you want pass component as a prop.
 
 ```JSX
