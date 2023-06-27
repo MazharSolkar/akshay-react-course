@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightskyblue;
+  padding: 10px;
+}
+
+.search {
+  padding: 10px;
+  border-radius: 10px;
+}
