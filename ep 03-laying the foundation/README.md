@@ -197,7 +197,3 @@ root.render(<Header />);
   </body>
 </html>
 ```
-
-```
-
-```
