@@ -40,7 +40,7 @@
   - _type = "application/xml"_ : If you want to embed XML data within a
   - _and many more ..._
 
-## TitleComponent vs <TitleComponent /> vs <TitleComponent></TitleComponent>
+## (TitleComponent vs <TitleComponent /> vs <TitleComponent></TitleComponent>)
 
 ````JSX
 {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>}
