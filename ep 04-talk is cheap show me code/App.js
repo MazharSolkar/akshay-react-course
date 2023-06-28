@@ -1551,16 +1551,18 @@ const resList = [
 
 const Card = (props) => {
   const { resData } = props;
+
+  const { cloudinaryImageId, name, costForTwo, cuisines } = resData?.data;
   return (
     <div className='card'>
       <div className='card-img-container'>
         <img
-          src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${resData.data.cloudinaryImageId}`}
+          src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${cloudinaryImageId}`}
         />
         <div className='card-list'>
-          <p>{resData.data.name}</p>
-          <p>price: {resData.data.costForTwo / 100}rs</p>
-          <p>cuisines: {resData.data.cuisines.join(', ')}</p>
+          <p>{name}</p>
+          <p>price: {costForTwo / 100}rs</p>
+          <p>cuisines: {cuisines.join(', ')}</p>
         </div>
       </div>
     </div>
@@ -1587,20 +1589,9 @@ const Body = () => {
   return (
     <div className='body-container'>
       <div className='card-container'>
-        <Card resData={resList[0]} />
-        <Card resData={resList[1]} />
-        <Card resData={resList[2]} />
-        <Card resData={resList[3]} />
-        <Card resData={resList[4]} />
-        <Card resData={resList[5]} />
-        <Card resData={resList[6]} />
-        <Card resData={resList[8]} />
-        <Card resData={resList[9]} />
-        <Card resData={resList[10]} />
-        <Card resData={resList[11]} />
-        <Card resData={resList[12]} />
-        <Card resData={resList[13]} />
-        <Card resData={resList[14]} />
+        {resList.map((restaurant) => (
+          <Card key={restaurant.data.id} resData={restaurant} />
+        ))}
       </div>
     </div>
   );
