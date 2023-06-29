@@ -39,6 +39,8 @@ export * from './Module'; // Re-export all values from the same module
 
 ## What is the importance of config.js file
 
+config.js file is used to store configuration settings and constants that are used throught the application. (It is common convention followed by developers)
+
 ## What are React Hooks?
 
 - hooks are normal JS functions provided by React. (utility functions).
