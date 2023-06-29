@@ -1,10 +1,8 @@
 import resList from '../utils/mockData';
 import { Card } from './Card';
 import { useState } from 'react';
-import { foo, bar } from './wildcardExport';
+
 const Body = () => {
-  console.log(foo);
-  console.log(bar);
   // usestate array destructuring :-
   // const arr = useState(resList);
   // const [listOfRestaurant, setListOfRestaurant] = arr;
