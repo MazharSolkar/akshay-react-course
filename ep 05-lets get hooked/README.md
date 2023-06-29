@@ -2,6 +2,41 @@
 
 ## What is the difference between **named export**, **default export** and **, \* export** ?
 
+- Default Export
+  allows to export single value.
+  there can be only on default export per file.
+
+```javascript
+const greeting = 'Hello, World!';
+export default greeting;
+```
+
+- Named Export
+  allows us to export multiple values with named identifier.
+
+```javascript
+// Module A
+export const foo = 'Hello';
+export const bar = 'World';
+
+// Module B
+import { foo, bar } from './ModuleA';
+console.log(foo); // Output: Hello
+console.log(bar); // Output: World
+```
+
+- Wildcard export (\*)
+  allows us to export all the named export in the file in on go.
+  It creates a namespace-like object that contains all the exported values.
+
+```javascript
+// Module.js
+export const foo = 'Hello';
+export const bar = 'World';
+
+export * from './Module'; // Re-export all values from the same module
+```
+
 ## What is the importance of config.js file
 
 ## What are React Hooks?
