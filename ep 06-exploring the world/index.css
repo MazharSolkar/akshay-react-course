@@ -91,7 +91,17 @@ body {
 
 .filter {
   margin-bottom: 1rem;
+  display: flex;
 }
+.search-box {
+  padding: 10px 5px;
+}
+
+.search > button {
+  padding: 10px 5px;
+  margin-right: 20px;
+}
+
 .filter-btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -110,4 +120,11 @@ body {
   height: 280px;
   padding: 10px;
   margin: 10px;
+}
+
+.auth-btn {
+  padding: 3px 10px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
 }
