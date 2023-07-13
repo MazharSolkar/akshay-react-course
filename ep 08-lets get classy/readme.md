@@ -3,6 +3,11 @@
 - (Research) why do we use super(props) in constructor?
 - (Research) Why can't we have the callback function of useEffect async?
 
+# Virtual DOM
+
+- JSX is converted to React element (which is object).
+- So basically VDOM is hierarchical object representation of actual DOM.
+
 # COMPONENT MOUNTING CYCLE
 
 **_The component mounting cycle in React refers to the sequence of events that occur when a component is being created and inserted into the DOM for the first time._** It involves a set of lifecycle methods that are called in a specific order during the mounting process.
