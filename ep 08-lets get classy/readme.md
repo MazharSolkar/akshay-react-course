@@ -42,7 +42,7 @@ constructor(props) {
 const {} = this.props;
 ```
 
-## Class Based vs Function Component Syntax
+### Class Based vs Function Component Syntax
 
 > Functional Component
 
@@ -109,7 +109,7 @@ class UserClass extends React.Component {
 - UserClass name={"mumbai"} location={"mumbai"} is instace of UserClass component.
 - Whenever we create instance of classComponent it invokes the contructor.
 
-## Understand React Lifecycle Method
+# Understand React Lifecycle Method
 
 1. ComponentDidMount
 
@@ -200,13 +200,14 @@ class About extends Component {
 export default About;
 ```
 
---- Mounting Cycle ---
+## --- Mounting Cycle ---
+
 two phases
 
 1. render phase
 2. commit phase
 
-> When there are two children render phase and commit phase of them will be batched together.
+after each commit phase ComponentDidMount() is invoked
 
 render phase
 child 1
@@ -215,6 +216,8 @@ child 2
 commit phase
 child 1
 child 2
+
+> When there are two children render phase and commit phase of them will be batched together.
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/d8357f53-2b91-4864-8825-c8c3311c2d04)
 
@@ -314,7 +317,7 @@ export default About;
 
 > complete explanation
 
---- Mounting Cycle ---
+### --- Mounting Cycle ---
 
 1 render phase
 
@@ -328,14 +331,14 @@ export default About;
 
 - It will trigger Update cycle.
 
---- Update Cycle ---
+### --- Update Cycle ---
 
 - component will re-render (as we know whenever state or prop changes it happen).
 - render phase will happen. (as it happens in Mounting cycle).
 - then commit phase will take place. (as it happen in Mounting cycle)
 - after that ComponentDidUpdate() will be invoked.
 
--- Unmounting Cycle ---
+## --- Unmounting Cycle ---
 
 - ComponentWillUnmount() is invoked.
 - It is invoked when componet is removed from UI. (eg: Going to some other page of website.)
