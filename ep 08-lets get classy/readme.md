@@ -200,7 +200,7 @@ class About extends Component {
 export default About;
 ```
 
-## --- Mounting Cycle ---
+### --- Mounting Cycle ---
 
 two phases
 
@@ -338,7 +338,7 @@ export default About;
 - then commit phase will take place. (as it happen in Mounting cycle)
 - after that ComponentDidUpdate() will be invoked.
 
-## --- Unmounting Cycle ---
+### --- Unmounting Cycle ---
 
 - ComponentWillUnmount() is invoked.
 - It is invoked when componet is removed from UI. (eg: Going to some other page of website.)
