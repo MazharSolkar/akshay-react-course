@@ -347,3 +347,12 @@ export default About;
 
 - ComponentWillUnmount() is invoked.
 - It is invoked when componet is removed from UI. (eg: Going to some other page of website.)
+
+# NOTE:
+
+Never compare **_Class Components_** lifcycle methods with **_Functional Components_**.
+
+### SPA
+
+we have only one page in our application.
+We are just changing components.
