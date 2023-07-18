@@ -1,0 +1,16 @@
+.app {
+  background-color: aquamarine;
+  padding: 10px;
+}
+.parent {
+  background-color: yellow;
+  padding: 10px;
+}
+.child {
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+}
+.grand-child {
+  background-color: lightgray;
+  padding: 10px;
+}
