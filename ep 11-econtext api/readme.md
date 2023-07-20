@@ -2,11 +2,11 @@
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/6457ec20-01de-4156-b567-00626fa2477b)
 
-I have data (eg: state) in `<App/>` component and I want to pass that data to `<component 3 />`.
+I have data (eg: state) in `<App/>` component and I want to pass that data to `<GrandChild />`.
 
-First I have to pass state as prop to `<component 1 />` then `<component 2 />` and then `<component 3 />`.
+First I have to pass state as prop to `<Parent />` component then `<Child />` and then `<GrandChild />`.
 
-To get data directly in `<component 3 />` and avoid prop drilling we can use **Context API**.
+To get data directly in `<GrandChild />` component and avoid prop drilling we can use **Context API**.
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/7d3c2ce4-9e89-4e33-b9fa-81a5627916bd)
 
@@ -22,8 +22,7 @@ import { useState } from 'react';
 function App() {
   const [data, setData] = useState('Mazhar Solkar');
   return (
-    <div className='app'>
-      <h1>App.jsx is on top of the component tree</h1>
+    <div>
       <Parent data={data} />
     </div>
   );
