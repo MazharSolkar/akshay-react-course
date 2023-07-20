@@ -10,13 +10,21 @@ To get data directly in `<GrandChild />` component and avoid prop drilling we ca
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/7d3c2ce4-9e89-4e33-b9fa-81a5627916bd)
 
-**`createContext:`** createContext is a method provided by the React object that creates a new context. It returns a Context object, which includes a Provider and a Consumer.
+`createContext:`
 
-`Provider:` The Provider component is used to wrap a section of your React component tree. It accepts a value prop, which can be any data you want to share with components that access this context.
+createContext is a method provided by the React object that creates a new context. It returns a Context object, which includes a Provider and a Consumer.
 
-`Consumer:` the Consumer component was used to access the context value within class components. However, with the introduction of hooks in React, the useContext hook is the preferred way to access context values within functional components.
+`Provider:`
 
-`useContext:` The useContext hook is used to access the current value of the context within a functional component.
+The Provider component is used to wrap a section of your React component tree. It accepts a value prop, which can be any data you want to share with components that access this context.
+
+`Consumer:`
+
+the Consumer component was used to access the context value within class components. However, with the introduction of hooks in React, the useContext hook is the preferred way to access context values within functional components.
+
+`useContext:`
+
+The useContext hook is used to access the current value of the context within a functional component.
 
 > note: In functional component useContext() hook doesn't work we use Consumer there for accessing context value.
 
