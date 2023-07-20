@@ -10,7 +10,7 @@ To get data directly in `<GrandChild />` component and avoid prop drilling we ca
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/7d3c2ce4-9e89-4e33-b9fa-81a5627916bd)
 
-`createContext:` createContext is a method provided by the React object that creates a new context. It returns a Context object, which includes a Provider and a Consumer.
+**`createContext:`** createContext is a method provided by the React object that creates a new context. It returns a Context object, which includes a Provider and a Consumer.
 
 `Provider:` The Provider component is used to wrap a section of your React component tree. It accepts a value prop, which can be any data you want to share with components that access this context.
 
