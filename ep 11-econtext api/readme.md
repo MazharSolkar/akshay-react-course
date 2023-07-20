@@ -1,4 +1,4 @@
-## Context API
+## CONTEXT API
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/6457ec20-01de-4156-b567-00626fa2477b)
 
@@ -10,7 +10,7 @@ To get data directly in `<GrandChild />` component and avoid prop drilling we ca
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/7d3c2ce4-9e89-4e33-b9fa-81a5627916bd)
 
-## Prop drilling
+## PROP DRILLING
 
 `<App />`
 
@@ -80,3 +80,5 @@ export default GrandChild;
 ### Output
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/c8455507-0ff3-4a16-b6eb-e904dc991e61)
+
+## CONTEXT API
