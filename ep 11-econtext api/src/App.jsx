@@ -1,23 +1,21 @@
 import './components/index.css';
 import Parent from './components/Parent';
-import { createContext, useState } from 'react';
+import { useContext, useState } from 'react';
+import AgeContext from './context/AgeContext';
 
-const AppContext = createContext();
-const AgeContext = createContext(27);
+const myAge = useContext(AgeContext);
 
 function App() {
-  const [name, setName] = useState('Mazhar Solkar');
+  const [age, setAge] = useState(myAge);
   return (
-    <AppContext.Provider value={[name, setName]}>
-      <AgeContext.Provider value={{ loggedInUser: 'Default User', setName }}>
-        <div className='app'>
-          <h1>App.jsx is on top of the component tree</h1>
-          <Parent />
-        </div>
-      </AgeContext.Provider>
-    </AppContext.Provider>
+    <AgeContext.Provider value={{ age: myAge, setAge }}>
+      <div className='app'>
+        <h1>App.jsx is on top of the component tree</h1>
+        <Parent />
+      </div>
+    </AgeContext.Provider>
   );
 }
 
-export { AppContext, AgeContext };
+export { AgeContext };
 export default App;

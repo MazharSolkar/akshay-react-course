@@ -10,11 +10,13 @@ To get data directly in `<GrandChild />` component and avoid prop drilling we ca
 
 ![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/7d3c2ce4-9e89-4e33-b9fa-81a5627916bd)
 
-1. `createContext:` createContext is a method provided by the React object that creates a new context. It returns a Context object, which includes a Provider and a Consumer.
+`createContext:` createContext is a method provided by the React object that creates a new context. It returns a Context object, which includes a Provider and a Consumer.
 
-2. `Provider:` The Provider component is used to wrap a section of your React component tree. It accepts a value prop, which can be any data you want to share with components that access this context.
+`Provider:` The Provider component is used to wrap a section of your React component tree. It accepts a value prop, which can be any data you want to share with components that access this context.
 
-3. `Consumer:` the Consumer component was used to access the context value within class components. However, with the introduction of hooks in React, the useContext hook is the preferred way to access context values within functional components.
+`Consumer:` the Consumer component was used to access the context value within class components. However, with the introduction of hooks in React, the useContext hook is the preferred way to access context values within functional components.
+
+`useContext:` The useContext hook is used to access the current value of the context within a functional component.
 
 > note: In functional component useContext() hook doesn't work we use Consumer there for accessing context value.
 
@@ -95,16 +97,54 @@ export default GrandChild;
 
 ## CONTEXT API
 
-> Creating context (store it in seperate file good practice)
+> Creating context and providing default value (store it in seperate file good practice)
+
+> If you don't have any meaningful default value then simply pass null `createContext(null)`.
 
 `UserContext`
 
 ```javascript
 import { createContext } from 'react';
 
-const UserContext = createContext({
-  loggedInUser: 'Default User',
+const AgeContext = createContext({
+  age: 'Default age',
 });
 
 export default UserContext;
+```
+
+> Wrapping component tree inside `AgeContext.Provider` component and passing values for the context inside value prop.
+
+`<App />`
+
+```javascript
+import './components/index.css';
+import Parent from './components/Parent';
+import { useContext, useState } from 'react';
+import AgeContext from './context/AgeContext';
+
+const myAge = useContext(AgeContext);
+
+function App() {
+  const [age, setAge] = useState(myAge);
+  return (
+    <AgeContext.Provider value={{ age: myAge, setAge }}>
+      <div className='app'>
+        <h1>App.jsx is on top of the component tree</h1>
+        <Parent />
+      </div>
+    </AgeContext.Provider>
+  );
+}
+
+export { AgeContext };
+export default App;
+```
+
+> accessing context value inside grandChild using `useContext() hook`.
+
+`<GrandChild />`
+
+```javascript
+
 ```
