@@ -18,7 +18,7 @@ To get data directly in `<GrandChild />` component and avoid prop drilling we ca
 
 `useContext:` The useContext hook is used to access the current value of the context within a functional component.
 
-> note: In functional component useContext() hook doesn't work we use Consumer there for accessing context value.
+> note: In functional component useContext() hook doesn't work we use Consumer there for accessing context value. But in functional component both options are available.
 
 createContext is used to create context.
 Provider is used to give value to the conext.
@@ -97,17 +97,19 @@ export default GrandChild;
 
 ## CONTEXT API
 
-> Creating context and providing default value (store it in seperate file good practice)
+- Creating context and providing default value (store it in seperate file good practice).
 
-> If you don't have any meaningful default value then simply pass null `createContext(null)`.
+- By providing a default value of { age: 'Default age' }, you are ensuring that if a component consumes the `context` but does not have a matching `Context.Provider` higher up in the component tree, it will still receive the `default value` as the `initial context value`. This can be useful to avoid errors in components that use the context but are not wrapped within a provider.
 
-`UserContext`
+-If you don't have any meaningful default value then simply pass null `createContext(null)`.
+
+`UserContext.js`
 
 ```javascript
 import { createContext } from 'react';
 
 const AgeContext = createContext({
-  age: 'Default age',
+  age: 'Default age (not wrapped)',
 });
 
 export default UserContext;
@@ -120,15 +122,13 @@ export default UserContext;
 ```javascript
 import './components/index.css';
 import Parent from './components/Parent';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import AgeContext from './context/AgeContext';
 
-const myAge = useContext(AgeContext);
-
 function App() {
-  const [age, setAge] = useState(myAge);
+  const [age, setAge] = useState('18');
   return (
-    <AgeContext.Provider value={{ age: myAge, setAge }}>
+    <AgeContext.Provider value={{ age: age, setAge }}>
       <div className='app'>
         <h1>App.jsx is on top of the component tree</h1>
         <Parent />
@@ -137,7 +137,6 @@ function App() {
   );
 }
 
-export { AgeContext };
 export default App;
 ```
 
@@ -146,5 +145,108 @@ export default App;
 `<GrandChild />`
 
 ```javascript
+import { useContext } from 'react';
+import AgeContext from '../context/AgeContext';
 
+const GrandChild = () => {
+  // console.log(useContext(AgeContext));
+
+  const { age, setAge } = useContext(AgeContext);
+
+  const handleChange = (e) => {
+    setAge(e.target.value);
+  };
+  return (
+    <div className='grand-child'>
+      <h1>Grand Child Component</h1>
+      <h1>age: {age}</h1>
+      <input type='text' onChange={handleChange} />
+    </div>
+  );
+};
+export default GrandChild;
+```
+
+### Here's a summary of how this context works:
+
+- You create the AgeContext using createContext and provide the default value of { age: 'Default age' }.
+
+- In your App component, you wrap the component tree with AgeContext.Provider, where you set the actual age and setAge values using useState.
+
+- Any child component (like GrandChild and Child) that consumes the AgeContext will be able to access the current age value and update it using the setAge function provided by the context.
+
+- Overall, this is a good approach for creating a context, especially when you want to provide default values for the context or when you expect some components to use the context without having a provider higher up in the tree.
+
+## Accessing Context value in Class based components.
+
+`<GrandChild /> classBased Component`
+
+```javascript
+import { useContext } from 'react';
+import AgeContext from '../context/AgeContext';
+import { Component } from 'react';
+
+class GrandChild extends Component {
+  render() {
+    return (
+      <AgeContext.Consumer>
+        {({ age, setAge }) => {
+          const handleChange = (e) => {
+            setAge(e.target.value);
+          };
+          return (
+            <div className='grand-child'>
+              <h1>Grand Child Component</h1>
+              <h1>age: {age}</h1>
+              <input type='text' onChange={handleChange} />
+            </div>
+          );
+        }}
+      </AgeContext.Consumer>
+    );
+  }
+}
+
+export default GrandChild;
+```
+
+`<GrandChild /> class component if there are more than one contexts to be consumed.`
+
+```javascript
+import React from 'react';
+import AgeContext from '../context/AgeContext';
+import AgeContext from '../context/NameContext';
+import { createContext } from 'react';
+
+const GrandChild = () => {
+  return (
+    <NameContext.Consumer>
+      {(contextValue) => {
+        const { name, setName } = contextValue;
+        return (
+          <AgeContext.Consumer>
+            {(contextValue) => {
+              const { age, setAge } = contextValue;
+              const handleChange = (e) => {
+                setAge(e.target.value);
+              };
+              return (
+                <div className='grand-child'>
+                  <h1>Grand Child Component</h1>
+
+                  <div>
+                    <h1>age: {age}</h1>
+                    <input type='text' onChange={handleChange} />
+                  </div>
+                </div>
+              );
+            }}
+          </AgeContext.Consumer>
+        );
+      }}
+    </NameContext.Consumer>
+  );
+};
+
+export default GrandChild;
 ```
