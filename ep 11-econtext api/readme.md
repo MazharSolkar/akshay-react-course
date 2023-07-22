@@ -93,7 +93,9 @@ export default GrandChild;
 
 ### Output
 
-![image](https://github.com/MazharSolkar/akshay-react-course/assets/86589812/c8455507-0ff3-4a16-b6eb-e904dc991e61)
+<img src="https://github.com/MazharSolkar/akshay-react-course/assets/86589812/c8455507-0ff3-4a16-b6eb-e904dc991e61" width=500 />
+
+<br />
 
 ## CONTEXT API
 
