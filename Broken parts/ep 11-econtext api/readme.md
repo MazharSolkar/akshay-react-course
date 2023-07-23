@@ -109,7 +109,7 @@ export default GrandChild;
 
 -If you don't have any meaningful default value then simply pass null `createContext(null)`.
 
-`UserContext.js`
+`AgeContext.js`
 
 ```javascript
 import { createContext } from 'react';
@@ -118,7 +118,7 @@ const AgeContext = createContext({
   age: 'Default age (not wrapped)',
 });
 
-export default UserContext;
+export default AgeContext;
 ```
 
 > Wrapping component tree inside `AgeContext.Provider` component and passing values for the context inside value prop.
