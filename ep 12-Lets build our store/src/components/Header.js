@@ -3,6 +3,7 @@ import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
 import UserContext from '../utils/UserContext';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const [value, setValue] = useState('login');
@@ -11,6 +12,12 @@ const Header = () => {
 
   const { loggedInUser } = useContext(UserContext);
   console.log(loggedInUser);
+
+  // Subscribing to the redux store using a Selector
+  // const cartItems = useSelector((store) => store.cart.items);
+  // console.log(cartItems);
+
+  // const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className='header-container border-2 border-red-400 flex flex-col items-center lg:flex-row lg:justify-between'>
@@ -33,13 +40,13 @@ const Header = () => {
         <li className='p-1 mb-1 lg:mx-4'>
           <Link to={'/grocery'}>Grocery</Link>
         </li>
-        <li className='p-1 mb-1 lg:mx-4'>Cart</li>
+        <li className='p-1 mb-1 lg:mx-4 font-bold text-xl'>Cart (0 items)</li>
         <li>
           <button
             className='auth-btn'
             onClick={() => {
               value === 'login' ? setValue('logout') : setValue('login');
-              console.log('clicked auat thn');
+              console.log('clicked auth btn');
             }}>
             {value}
           </button>
