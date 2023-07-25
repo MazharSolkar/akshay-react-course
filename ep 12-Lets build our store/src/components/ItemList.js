@@ -1,7 +1,21 @@
-const CDN_URL = `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/`;
+import { CDN_URL } from '../utils/config';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../utils/cartSlice';
 
 const ItemList = ({ items }) => {
-  // console.log(items);
+  const dispatch = useDispatch();
+
+  const handleAddItem = (item) => {
+    // Dispatch an action
+
+    dispatch(addItem(item));
+    // dispatch(addItem('pizza'));
+    // {
+    // playload : "pizza"
+    // }
+    // It will be passed as 2nd argument
+  };
+
   return (
     <div>
       {items.map((item) => (
@@ -22,7 +36,9 @@ const ItemList = ({ items }) => {
           </div>
           <div className='lg:p-4 w-3/12 '>
             <div className='absolute '>
-              <button className='lg:p-2 bg-black text-white shadow-lg'>
+              <button
+                className='lg:p-2 bg-black text-white shadow-lg'
+                onClick={() => handleAddItem(item)}>
                 Add +
               </button>
             </div>
