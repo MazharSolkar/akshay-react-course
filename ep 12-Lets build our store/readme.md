@@ -114,7 +114,7 @@ const appStore = configureStore({
 export default appStore;
 ```
 
-### Use Redux State and Actions in React Components (subscribing to store)
+### Use Redux State and Actions in React Components
 
 Now we can use the React-Redux hooks to let React components interact with the Redux store.
 
