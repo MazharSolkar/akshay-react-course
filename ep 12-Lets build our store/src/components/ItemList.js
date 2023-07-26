@@ -1,10 +1,10 @@
-import { CDN_URL } from '../utils/config';
+import CDN_URL from '../utils/config';
+
 import { useDispatch } from 'react-redux';
 import { addItem } from '../utils/cartSlice';
 
 const ItemList = ({ items }) => {
   const dispatch = useDispatch();
-
   const handleAddItem = (item) => {
     // Dispatch an action
 

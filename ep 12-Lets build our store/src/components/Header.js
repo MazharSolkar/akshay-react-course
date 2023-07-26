@@ -11,11 +11,11 @@ const Header = () => {
   const onlineStatus = useOnlineStatus;
 
   const { loggedInUser } = useContext(UserContext);
-  console.log(loggedInUser);
+  // console.log(loggedInUser);
 
   // Subscribing to the redux store using a Selector
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
 
   return (
     <div className='header-container border-2 border-red-400 flex flex-col items-center lg:flex-row lg:justify-between'>

@@ -8,6 +8,7 @@ const cartSlice = createSlice({
   reducers: {
     addItem: (state, action) => {
       // mutating the state here
+      console.log(action.type);
       state.items.push(action.payload);
     },
     removeItem: (state) => {
@@ -20,6 +21,6 @@ const cartSlice = createSlice({
 });
 
 // exporting actions
-export const { addItem, removeItems, clearItems } = cartSlice.actions;
+export const { addItem, removeItems, clearCart } = cartSlice.actions;
 
 export default cartSlice.reducer;

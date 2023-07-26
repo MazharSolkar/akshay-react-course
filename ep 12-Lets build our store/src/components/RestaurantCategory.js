@@ -7,8 +7,8 @@ const RestaurantCategory = ({ data, isOpen, setShowItems }) => {
 
   return (
     <div>
-      {/* Accordion Header */}
       <div className='w-6/12 m-auto my-4 bg-gray-50 shadow-lg'>
+        {/* Accordion Header */}
         <div
           className='flex justify-between cursor-pointer'
           onClick={handleClick}>
