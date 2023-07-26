@@ -1,5 +1,19 @@
 # Redux Toolkit (RTK) (Read from official doc counter example)
 
+### How Redux Works behind the scene
+
+<img src="https://github.com/MazharSolkar/akshay-react-course/assets/86589812/74d47f0e-8fb8-466a-a068-776c7cd711c5" width=500 />
+
+**`Write to Redux Store` :**
+
+> When you click `add to Cart` button it dispatches action and calls a reducer function which modifies state of the slice of our redux store.
+
+**`Read data from Redux Store` :**
+
+> For reading data we need to subscribe to store, for that we use `selector`.
+>
+> Subscribing to store means our `<Header />` component is in sync with redux store. Whenever redux store changes `<Header />` componets `cart` will be updated automatically.
+
 ### Install two libraries required for working with redux
 
 - @reduxjs/tookit
