@@ -4,6 +4,8 @@
 
 <img src="https://github.com/MazharSolkar/akshay-react-course/assets/86589812/74d47f0e-8fb8-466a-a068-776c7cd711c5" width=500 />
 
+<br />
+
 **`Write to Redux Store` :**
 
 > When you click `add to Cart` button it dispatches action and calls a reducer function which modifies state of the slice of our redux store.
