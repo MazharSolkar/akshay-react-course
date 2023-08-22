@@ -1,0 +1,103 @@
+{
+    "id": "412594",
+    "name": "Dabba Garam (Homely Meals & More)",
+    "cloudinaryImageId": "aykz87tburaufgqhsboa",
+    "locality": "Opp Kalapradashan Udyan",
+    "areaName": "Andheri West",
+    "costForTwo": "₹150 for two",
+    "cuisines": [
+        "Home Food",
+        "North Indian",
+        "Thalis"
+    ],
+    "avgRating": 4.3,
+    "veg": true,
+    "feeDetails": {
+        "restaurantId": "412594",
+        "fees": [
+            {
+                "name": "BASE_DISTANCE",
+                "fee": 3000
+            },
+            {
+                "name": "BASE_TIME"
+            },
+            {
+                "name": "ANCILLARY_SURGE_FEE"
+            }
+        ],
+        "totalFee": 3000
+    },
+    "parentId": "67608",
+    "avgRatingString": "4.3",
+    "totalRatingsString": "5K+",
+    "sla": {
+        "deliveryTime": 21,
+        "lastMileTravel": 2.2,
+        "serviceability": "SERVICEABLE",
+        "slaString": "21 mins",
+        "lastMileTravelString": "2.2 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2023-08-12 22:50:00",
+        "opened": true
+    },
+    "badges": {
+        "textExtendedBadges": [
+            {
+                "iconId": "guiltfree/GF_Logo_android_3x",
+                "shortDescription": "options available",
+                "fontColor": "#7E808C"
+            }
+        ]
+    },
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {
+                "badgeObject": [
+                    {
+                        "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "aggregatedDiscountInfoV3": {
+        "header": "₹100 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL",
+        "discountCalloutInfo": {
+            "message": "Free Delivery",
+            "logoCtx": {
+                "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+            }
+        }
+    },
+    "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+}
