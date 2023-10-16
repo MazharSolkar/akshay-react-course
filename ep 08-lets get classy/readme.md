@@ -31,7 +31,7 @@
 
 - It is a class, which extends React.Component and returns piece of JSX.
 - It have **_render()_** method which returns JSX.
-- For passing props in class based components constructor is used.
+- For receiving props in class based components constructor is used.
 
 ```javascript
 constructor(props) {
